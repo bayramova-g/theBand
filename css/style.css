@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Lato,serif";
+}
+
+.space {
+  background: lightblue;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  background-color: black;
+  padding-left: 1rem;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 1.2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: white;
+}
+nav ul li:hover {
+  background-color: #ccc;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+.search {
+  display: inline-block;
+  margin-left: calc(100% - 423px);
+
+}
+.hamurger{
+    display: none;
+}
+.more {
+  position: relative;
+}
+
+.more:hover > ul:nth-child(2) {
+  display: block;
+}
+.sub {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 0;
+  left: 0;
+  top: 42px;
+}
+
+.sub li {
+  padding: 1rem;
+}
+.sub li a {
+  color: black;
+  font-size: 1.3rem;
+}
+
+.hero {
+  position: relative;
+  z-index: -1;
+
+
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+  max-height: calc(100vh - 42px);
+}
+
+.content {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 4rem;
+  font-weight: normal;
+  color: white;
+}
+
+.content h2 {
+  font-size: 2.7rem;
+}
+
+.content h4 {
+  font-size: 1.7rem;
+  padding-top: 1.6rem;
+}
+
+.center {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.band {
+  padding-top: 6rem;
+}
+
+.band h2 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.7rem;
+  font-size: 3.5rem;
+}
+
+.band h4 {
+  font-style: italic;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 0;
+  opacity: 0.5;
+  line-height: 1.5;
+}
+
+.band p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.member {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10rem;
+}
+
+.member.container {
+  width: 20%;
+}
+
+.member img {
+  width: 55%;
+  display: block;
+  border-radius: 0.5rem;
+  margin-left: 5.8rem;
+}
+
+.member p {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 2rem 0;
+}
+
+.dates-container {
+  width: 100%;
+  background-color: black;
+}
+
+.dates {
+  padding-top: 8rem;
+}
+
+.dates h2,
+h4 {
+  color: white;
+  text-align: center;
+  font-weight: normal;
+}
+
+.dates h2 {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.dates h4 {
+  font-size: 1.6rem;
+  color: rgb(134, 133, 133);
+  padding: 2rem 0;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.months div {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.months span {
+  padding: 1rem;
+  font-size: 1.6rem;
+  display: inline-block;
+  color: grey;
+}
+
+.months .sold {
+  padding: 0.5rem;
+  background-color: #f44336;
+  color: white;
+}
+
+.months .num {
+  background-color: black;
+  color: white;
+  padding: 0;
+  width: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin-left: calc(100% - 120px);
+}
+.cities-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.cities {
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+  width: 56%;
+  height: 40rem;
+}
+
+.cities .cart {
+  background-color: white;
+  width: 25rem;
+  height: 100%;
+}
+
+.cities img {
+  width: 100%;
+}
+.cities.cart:hover {
+  opacity: 0.7;
+}
+
+.cities p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.cities .date-city {
+  color: rgb(112, 106, 106);
+}
+
+button.button-city {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin-top: 15px;
+  margin-left: 10px;
+  background-color: black;
+  width: 110px;
+  height: 40px;
+  color: white;
+  font-size: 15px;
+}
+
+.contact {
+  padding-top: 8rem;
+  padding-bottom: 9rem;
+}
+
+.contact h2,
+h4 {
+  text-align: center;
+  font-weight: normal;
+}
+
+.contact h2 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.contact h4 {
+  font-size: 1.7rem;
+  padding: 3rem;
+  color: #666;
+  font-style: italic;
+}
+
+.container {
+  display: flex;
+}
+
+.address {
+  flex: 1;
+  font-size: 1.9rem;
+  color: rgb(8, 8, 8);
+}
+
+.address i {
+  padding: 1rem;
+}
+
+.form {
+  flex: 1;
+}
+
+.form input[type="text"]:nth-child(n) {
+  font-size: 1.7rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.form input[type="text"]:nth-child(1),
+.form input[type="text"]:nth-child(2) {
+  width: 48%;
+}
+.form input[type="text"]:nth-child(3) {
+    width: 100%;
+    margin-top: 1rem;
+}
+.form input[type="text"]:nth-child(2){
+
+margin-left: 3.3%;
+
+}
+
+.form a{
+font-size: 1.7rem;
+text-decoration: none;
+background-color: black;
+display: block;
+padding: 0.7rem 1.4rem;
+color: #fff;
+width: 73px;
+margin-left: auto;
+margin-top: 1rem;
+}
+
+.map img{
+
+width: 100%;
+
+display: block;
+
+}
+
+
+footer{
+
+text-align: center;
+padding-top: 8rem;
+
+}
+
+.fa-brands{
+
+font-size: 2rem;
+padding: 0.3rem;
+color:#666;
+
+}
+
+
+footer p{
+padding:2rem;
+font-size: 1.5rem;
+color:#666;
+
+
+}
+
+
+#slideset4 > * {
+    animation: 12s autoplay4 infinite;
+    overflow: hidden;
+  }
+  
+  @keyframes autoplay4 {
+    0% {
+      height: auto;
+      border: thin solid;
+    }
+    33.32% {
+      height: auto;
+      border: thin solid;
+    }
+    33.33% {
+      height: 0;
+      padding: 0;
+      border: none;
+    }
+    100% {
+      height: 0;
+      padding: 0;
+      border: none;
+    }
+  }
+  
+  #slideset4 > *:nth-child(1) {
+    animation-delay: 0s;
+  }
+  #slideset4 > *:nth-child(2) {
+    animation-delay: -8s;
+  }
+  #slideset4 > *:nth-child(3) {
+    animation-delay: -4s;
+  }
+  
+
+
+/* media queries */
+
+@media(max-width:600px){
+nav ul{
+display: block;
+
+}
+nav ul.more,.search{
+    display: none;
+}
+nav ul li:nth-child(2),li:nth-child(3),li:nth-child(4){
+    display: none;
+}
+
+
+nav ul.hamurger{
+
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+
+}
