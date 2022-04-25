@@ -34,36 +34,38 @@
         </ul>
 
     </nav>
-<div id="slideset4">
+    <!-- main section-->
+    <div id="slideset4">
 
-    <div class="hero">
-        <img style=" margin-top: 40px;" src="/image/chicago.jpeg" alt="">
-        <div class="content">
+        <div class="hero">
+            <img style=" margin-top: 40px;" src="/image/chicago.jpeg" alt="">
+            <div class="content">
 
-            <h2>Chicago</h2>
-            <h4>Thank you, Chicago - A night we won't forget </h4>
+                <h2>Chicago</h2>
+                <h4>Thank you, Chicago - A night we won't forget </h4>
+            </div>
         </div>
-    </div>
-    <div class="hero">
-        <img src="/image/la.jpeg" alt="">
-        <div class="content">
+        <div class="hero">
+            <img src="/image/la.jpeg" alt="">
+            <div class="content">
 
-            <h2>Los Angeles</h2>
-            <h4>We had the best time playing at Venice Beach! </h4>
+                <h2>Los Angeles</h2>
+                <h4>We had the best time playing at Venice Beach! </h4>
+            </div>
         </div>
-    </div>
-    <div class="hero">
-        <img src="/image/ny.jpeg" alt="">
-        <div class="content">
+        <div class="hero">
+            <img src="/image/ny.jpeg" alt="">
+            <div class="content">
 
-            <h2>New York</h2>
-            <h4>The Night in New York was Awasemo! </h4>
+                <h2>New York</h2>
+                <h4>The Night in New York was Awasemo! </h4>
+            </div>
         </div>
+
+
     </div>
-
-
-</div>
-  
+    <!-- main section-->
+    <!-- the band section -->
     <div class="band center">
 
         <h2>THE BAND</h2>
@@ -82,23 +84,21 @@
 
 
     <div class="member center">
-
-        <div class="container">
+        <div class="p-container">
             <p>Name</p>
-            <img src="/image/bandmember.jpeg" alt="">
+            <p>Name</p>
+            <p>Name</p>
         </div>
-        <div class="container">
-            <p>Name</p>
+        <div class="img-container">
             <img src="/image/bandmember.jpeg" alt="">
-        </div>
-        <div class="container">
-            <p>Name</p>
+            <img src="/image/bandmember.jpeg" alt="">
             <img src="/image/bandmember.jpeg" alt="">
         </div>
 
     </div>
+    <!-- the band section -->
 
-
+    <!-- tour dates section -->
     <div class="dates-container">
 
         <div class="dates">
@@ -149,6 +149,10 @@
         </div>
     </div>
 
+
+   <!-- tour dates section -->
+
+<!-- contact section -->
     <div class="contact center">
 
         <h2>contact</h2>
@@ -158,9 +162,9 @@
                 <i class="fa-solid fa-location-dot"></i>
                 "Chicago, US" <br>
                 <i class="fa-solid fa-phone"></i>
-                " Phone: +00 151515" <br>
+                "Phone: +00 151515" <br>
                 <i class="fa-solid fa-envelope"></i>
-                " Email: mail@mail.com" <br>
+                "Email: mail@mail.com" <br>
             </div>
             <div class="form">
 
@@ -172,7 +176,7 @@
         </div>
 
     </div>
-
+<!-- contact section -->
     <!-- map start-->
 
     <div class="map">
@@ -201,7 +205,18 @@
 
     <div class="space"></div>
 
+    <script>
 
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+    </script>
 </body>
 
 </html>
