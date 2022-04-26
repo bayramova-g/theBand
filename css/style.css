@@ -79,7 +79,7 @@ nav ul li a:hover {
 .hero img {
   width: 100%;
   display: block;
-  max-height: calc(100vh - 42px);
+  max-height: calc(100vh - 2.625rem);
 }
 
 .content {
@@ -403,7 +403,7 @@ footer p {
 
 /* media queries */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   nav ul.more,
   .search {
     display: none;
@@ -423,40 +423,34 @@ footer p {
   }
 
   .center {
-    max-width: 400px;
+    max-width: 25rem;
     margin: 0 auto;
   }
-  
   .band {
     padding-top: 6rem;
   }
-  
- 
-  
   .band p {
     font-size: 1.5rem;
     line-height: 1.5;
     text-align: justify;
   }
-  
   .member {
     margin-bottom: 11rem;
     margin-top: 8rem;
   }
-  
   .p-container {
     display: flex;
     justify-content: space-around;
     margin-bottom: 2rem;
   }
-  
+
   .p-container p {
-display: none;
+    display: none;
   }
-  
+
   .img-container {
     display: flex;
-  align-content: space-between;
+    align-content: space-between;
     align-items: center;
     flex-direction: column;
   }
@@ -466,13 +460,12 @@ display: none;
     height: auto;
     border-radius: 4px;
   }
-  
+
   .cities-box {
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: black;
-  
   }
   .cities {
     margin-top: 3rem;
@@ -480,22 +473,18 @@ display: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 73%;
+    width: 72%;
     height: auto;
- 
   }
-  
+
   .cities .cart {
     background-color: white;
     width: 40rem;
     height: 100%;
     margin-bottom: 4rem;
- 
   }
 
-  
   button.button-city {
-  
     font-family: "Segoe UI", Arial, sans-serif;
     margin-top: 15px;
     margin-left: 14rem;
@@ -507,30 +496,25 @@ display: none;
     font-size: 15px;
   }
 
-
-
   .address {
     flex: 2;
     font-size: 1.9rem;
     color: rgb(8, 8, 8);
   }
-  
+
   .address i {
     padding: 1rem;
   }
 
-
   .form {
-    flex:1;
+    flex: 1;
   }
-  
 
   .form input[type="text"]:nth-child(1) {
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 2.3%;
-
   }
   .form input[type="text"]:nth-child(2) {
     margin-left: 2.3%;
@@ -538,5 +522,124 @@ display: none;
   .form input[type="text"]:nth-child(3) {
     margin-left: 2.3%;
   }
+}
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  nav {
+    width: 100%;
+  }
+
+  .hero {
+    width: 200vw;
+    position: relative;
+    z-index: -1;
+  }
+
+  .hero img {
+    width: 100%;
+    display: block;
+    max-height: calc(100vh - 2.625rem);
+  }
+
+  .box-band {
+    width: 200vw;
+  }
+  .band {
+    padding-top: 6rem;
+  }
+
+  .band h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 0.7rem;
+    font-size: 3.5rem;
+  }
+
+  .band h4 {
+    font-style: italic;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0;
+    opacity: 0.5;
+    line-height: 1.5;
+    color: black;
+  }
+
+  .band p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 5rem;
+  }
+
+  .p-container {
+    display: none;
+  }
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 26%;
+    width: 150vw;
+    margin-bottom: 10rem;
+  }
+  .img-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 4rem;
+  }
+
+  .months {
+    margin-left: 5.5rem;
+  }
+
+  .dates-container {
+    width: 200vw;
+    background-color: black;
+  }
+
+  .cities-box {
+    width: 200vw;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  }
+  .cities {
+    margin-right: 3rem;
+  }
+
+  .map img {
+    width: 31.25rem;
+
+    display: block;
+  }
+.contact{
+  width: 200vw;
+}
+  .address {
+    flex: 1;
+    font-size: 1.9rem;
+    color: rgb(8, 8, 8);
+    margin-left: 2rem;
+  }
+
+  .address i {
+    margin-top: 2rem;
+  }
+  .map{
+    width: 100%;
+    margin: 0;
+  }
+
+  .map img{
+    width: 200vw;
+  }
+
+
+  footer{
+    width: 200vw;
+  }
 }
